@@ -26,7 +26,7 @@ body, html {
 }
 
 .nameheader{
-    font-weight: 800;
+    font-weight: 600;
     font-size: 2.3em;
     letter-spacing: normal;
     color: Black;
@@ -81,6 +81,20 @@ body, html {
         0%{width: 0%;}
         100%{width: 90%;}
     }
+
+@keyframes quickhighlight{
+        0%{
+            background-color:rgb(255, 123, 255);
+        }
+        100%{
+            background-color:rgba(255, 123, 255, 0)
+        }
+}
+
+.openHighlight{
+    animation-name: quickhighlight; 
+    animation-duration: 1s;
+}
 .cpp {
     width: 70%; 
     background-color: #fbc93d;
@@ -193,6 +207,10 @@ body, html {
 
 .sec{
     margin-bottom: 3em;
+}
+
+#resumeSec{
+    padding-bottom: 3em;
 }
 
 .rtitle{

@@ -52,10 +52,13 @@
     </div>
     
     <div  class="content">
+        
         <div class="bannerov">
-            <h1 class="nameheader">TAMU DATA VISUALIZATION | DREW SPOONER</h1>
-            <h1 class="nameheader">Homepage</h1>
+            <h3>TAMU Data Visualization | Assignment 1 | September 10, 2021</h3>
+            <img class="profilepic" src="img/profile.png">
         </div>
+        <h1 class="nameheader">DREW SPOONER</h1>
+        
         
         <div class="introsec">
         <p class="introtext">
@@ -66,53 +69,32 @@
         I am a senior Computer Science (Bachelor of Arts in Computing) student at Texas A&M with a minor in Art/New Media. I have a desire to go into front end software development post-grad, so this course would be a beneficial component for learning best practices for displaying data on interfaces.  
         </p>
             
-        <p class="introtext">
-        The purpose of this page is to display all the individual assignments, projects, and groupwork from this course publicly for others to enjoy.
-        </p>
-        </div>
-        
-        <div class="exlink" style="text-align:center"><a href="#assignments"><button class="github" id="hide">View All Assignments</button></a>
-        </div>
-        
-        
-        
-        
-        <script>
-            $(document).ready(function() {
-                $('#resumeSec').fadeToggle(0);
-            });
-            
-            $('#hide').click(function(){
-                var resButton = new $('#hide').text();
-                if (resButton == "View All Assignments"){
-                    $('#hide').text("Hide Assignments");
-                } else{
-                    $('#hide').text("View All Assignments");
-                }
-                $('#resumeSec').fadeToggle('fast');
-                $('#assignHighlight').addClass('openHighlight');
-            });
-            
-            $('#assignmentnav').click(function(){
-                var resButton = new $('#hide').text();
-                if (resButton == "View All Assignments"){
-                    $('#resumeSec').fadeIn('fast');
-                    $('#hide').text("Hide Assignments");
-                } 
-            });
-            
-        </script>
         
         <div id="resumeSec">
         <div class="sec">
-            <h2 id="assignments"><span id="assignHighlight">Assignments</span></h2>
+            <h2 id="assignments"><span id="assignHighlight">Data Visualizations</span></h2>
         
         <div class="entry">
-        <div class="inlink" style="text-align:left"> <p class="titleh"><b>#1</b> | Personal Webpage <button onclick="window.location.href='/1.html'" class="mediumb">View Assignment</button></p> 
-            
+        <div class="inlink" style="text-align:left"> <p class="titleh"><b>Good Example</b> | Sankey Chart 
+            <button onclick="window.open('https://pmigdal.medium.com/tinder-anecdata-and-sankey-diagrams-c1c0e5dfff18')"class="mediumb">Link</button></p> 
+            <p class="subtitle"> I have always been a big fan of Sankey graphs. They are quite beneficial for datasets where values exist as
+            states transitions to new states, such as statuses of job applications, or in this case: displaying of dating app matches. Not only is it
+            quite easy to follow when a node starts and finishes its progression through states early on, it is also incredibly easy to follow the
+            state of a node through all conditions. This is likely due to the graph's smooth illustrative nature and ability to easily color code.</p>
         </div>
-        <p class="subtitle"> September 10, 2021</p>
-        <p class="subtitle"> Personal website for displaying data visualization projects and assignments</p>
+        </div>
+            
+        <div class="entry">
+        <div class="inlink" style="text-align:left"> <p class="titleh"><b>Bad Example</b> | The Pie Chart
+            <button onclick="window.open('https://www.data-to-viz.com/caveat/pie.html')"class="mediumb">Link</button></p> 
+            <p class="subtitle"> Just because a visualization is used frequently does not imply that the visualization is effective at displaying
+            data. The pie chart itself is a poor way to display information for several reasons. Firstly, it is not easy to compare values unless there
+            is a strict juxtaposition <i>(such as 90% to 10%)</i>. In my opinion, pie charts represent a subset of visualizations that are purely used
+            to try to add credibility to presentations through the showing of data, leading many to tune out and ignore the message of the data itself.
+            If one is trying to display the differences between percentages of data, a simple way to increase the immediate understanding of the data would
+            be to substitute another basic chart such as a bar graph, where it is easier to discern relative differences via a horizontal line.
+            </p>
+        </div>
         </div>
            
             
